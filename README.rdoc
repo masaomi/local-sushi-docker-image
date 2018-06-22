@@ -12,6 +12,7 @@
 
 === 3. start docker container
 
+  $ cd sushi/master/
   $ docker run --rm -p 4000:4000 -v "$PWD":/app masaomi/local-sushi-docker-image:fastqcapp-setup
 
 === 4. star workflow manager
