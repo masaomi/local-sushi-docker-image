@@ -1,0 +1,3 @@
+Name	Read1 [File]	Read2 [File]	Species	Adapter1	Adapter2	StrandMode	Enrichment Kit	Read Count	Genotype [Factor]	BFabric Info [B-Fabric]
+mut1	p1001/ventricles_100k/MutantSample_1_R1.fastq.gz	p1001/ventricles_100k/MutantSample_1_R2.fastq.gz	Mus musculus	GATCGGAAGAGCACACGTCTGAACTCCAGTCAC	AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT	both	poly-A	100000	mut	test1
+mut2	p1001/ventricles_100k/MutantSample_2_R1.fastq.gz	p1001/ventricles_100k/MutantSample_2_R2.fastq.gz	Mus musculus	GATCGGAAGAGCACACGTCTGAACTCCAGTCAC	AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT	both	poly-A	100000	mut	test2
