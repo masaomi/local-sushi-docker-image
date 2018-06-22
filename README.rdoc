@@ -1,6 +1,33 @@
 == How to run Docker SUSHI
 
+1. get docker image
 ```
-TODO
+$ docker pull masaomi/local-sushi-docker-image:fastqcapp-setup
 ```
+
+2. get sushi source code
+```
+$ git clone https://github.com/uzh/sushi.git
+$ git clone https://github.com/masaomi/local-sushi-docker-image.git
+$ cp -r local-sushi-docker-image/master sushi/
+```
+
+3. start docker container
+```
+$ docker run --rm -p 4000:4000 -v "$PWD":/app masaomi/local-sushi-docker-image:fastqcapp-setup
+```
+
+4. Access
+* http://localhost:4000
+
+== Demonstrate FastQCApp
+
+1. If you succeeds in SUSHI running, you can try to run FastQCApp with ventricles_100k dataset
+2. Click 'gstore'-'ventricles_100k', and click '+' button of 'dataset.tsv'
+3. Go to 'DataSet', and you can find 'ventricles_100k', and click it.
+4. Click 'FastQCApp' button
+5. Click 'Next'
+6. Click 'Submit'
+7. Wait for a few minutes
+8. You can see the FastQC results
 
