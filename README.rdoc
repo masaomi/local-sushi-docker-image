@@ -1,20 +1,20 @@
 == How to run Docker SUSHI
 
-=== get docker image
+=== 1. get docker image
 
   $ docker pull masaomi/local-sushi-docker-image:fastqcapp-setup
 
-=== get sushi source code
+=== 2. get sushi source code
 
   $ git clone https://github.com/uzh/sushi.git
   $ git clone https://github.com/masaomi/local-sushi-docker-image.git
   $ cp -r local-sushi-docker-image/master sushi/
 
-=== start docker container
+=== 3. start docker container
 
   $ docker run --rm -p 4000:4000 -v "$PWD":/app masaomi/local-sushi-docker-image:fastqcapp-setup
 
-=== star workflow manager
+=== 4. star workflow manager
 
 (from another terminal)
 
@@ -25,7 +25,7 @@
   # cd workflow_manager/
   # bundle exec workflow_manager
 
-=== Access
+=== 5. Access
 
 * [http://localhost:4000](http://localhost:4000)
 * [http://hostname:4000](http://hostname:4000)
