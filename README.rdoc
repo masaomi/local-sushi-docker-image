@@ -26,6 +26,11 @@
   # cd workflow_manager/
   # bundle exec workflow_manager
 
+Note
+* Submitted job data will be saved in workflow_manager/ in the host OS
+* Actual DataSets will be generated and saved in public/projects/p1001/ in the host OS
+* SUSHI will use the database of db/production.sqlite3 in the host OS
+
 === 5. Access
 
 * http\://localhost:4000
