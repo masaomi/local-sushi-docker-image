@@ -13,15 +13,13 @@
 === 3. start docker container
 
   $ cd sushi/master/
-  $ docker run --rm -p 4000:4000 -v "$PWD":/app masaomi/local-sushi-docker-image:fastqcapp-setup
+  $ docker run --name sushi --rm -p 4000:4000 -v "$PWD":/app masaomi/local-sushi-docker-image:fastqcapp-setup
 
 === 4. star workflow manager
 
 (from another terminal)
 
-  $ docker ps -a
-  (Check the container ID)
-  $ docker exec -it [conteriner ID] bash
+  $ docker exec -it sushi bash
   (login the container)
   # cd workflow_manager/
   # bundle exec workflow_manager
