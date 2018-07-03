@@ -8,7 +8,7 @@
 
   $ git clone https://github.com/uzh/sushi.git
   $ git clone https://github.com/masaomi/local-sushi-docker-image.git
-  $ cp -r local-sushi-docker-image/master sushi/
+  $ cp -R local-sushi-docker-image/master sushi/
 
 === 3. start docker container
 
